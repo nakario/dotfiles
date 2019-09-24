@@ -13,6 +13,18 @@ zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
 
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
+### zsh-autosuggestions: Fish-like autosuggestions for zsh
+
+zplug "zsh-users/zsh-autosuggestions"
+
+### zsh-comletions: Additional completion definitions for Zsh
+
+zplug "zsh-users/zsh-completions"
+
+### zsh-256color: ZSH plugin to enhance the terminal environment with 256 colors
+
+zplug "chrissicool/zsh-256color"
+
 ### load the above plugins
 
 zplug load
