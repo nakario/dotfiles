@@ -83,6 +83,16 @@ export PIPENV_VENV_IN_PROJECT=true
 eval "$(rbenv init -)"
 
 
+## OS-specific settings
+
+case ${OSTYPE} in
+  darwin*)
+    export PATH="/usr/local/opt/openssl/bin:$PATH"
+    export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+    ;;
+esac
+
+
 ## others
 
 export PATH=$PATH:$HOME/.local/bin # various commands installed locally
