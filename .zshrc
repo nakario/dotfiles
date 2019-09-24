@@ -93,6 +93,13 @@ case "${OSTYPE}" in
 esac
 
 
+## machine-specific settings
+
+if [[ -e "${HOME}/.local.zshrc" ]]; then
+  source "${HOME}/.local.zshrc"
+fi
+
+
 ## others
 
 export PATH="${HOME}/.local/bin:${PATH}" # various commands installed locally
