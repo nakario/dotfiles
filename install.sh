@@ -15,7 +15,7 @@ if [[ ! -x $(command -v zsh) ]]; then
 fi
 
 if [[ ! -e "${HOME}/.zplug" ]]; then
-  curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+  git clone https://github.com/zplug/zplug "${HOME}/.zplug"
 fi
 
 
@@ -30,6 +30,8 @@ fi
 
 if [[ ! -x $(command -v nodebrew) ]]; then
   brew install nodebrew
+  $HOME/.linuxbrew/opt/nodebrew/bin/nodebrew setup_dirs
+  export PATH=$HOME/.nodebrew/current/bin:$PATH
 fi
 
 if [[ ! -x $(command -v node) ]]; then
@@ -42,6 +44,7 @@ fi
 
 if [[ ! -e "${HOME}/.pyenv" ]]; then
   brew install pyenv
+  eval "$(pyenv init -)"
 fi
 
 
@@ -49,5 +52,5 @@ fi
 
 if [[ ! -e "${HOME}/.rbenv" ]]; then
   brew install rbenv
-  rbenv init
+  eval "$(rbenv init -)"
 fi
