@@ -37,3 +37,23 @@ zplug "chrissicool/zsh-256color"
 ### Load the above plugins
 
 zplug load
+
+
+## zsh
+
+### history
+
+HISTFILE="${HOME}/.zsh_history"
+HISTSIZE=10000
+SAVEHIST=10000
+setopt extended_history
+
+### alias
+
+alias ls="ls -G"
+alias la="ls -a"
+alias ll="ls -lh"
+
+### others
+
+setopt brace_ccl # enable individual characters expansion: a{123x-z} -> a1 a2 a3 ax ay az
