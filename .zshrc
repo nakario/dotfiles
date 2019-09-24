@@ -61,19 +61,19 @@ setopt brace_ccl # enable individual characters expansion: a{123x-z} -> a1 a2 a3
 
 ## go
 
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+export GOPATH="${HOME}/go"
+export PATH="${GOPATH}/bin:${PATH}"
 
 
 ## node
 
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH="${HOME}/.nodebrew/current/bin:${PATH}"
 
 
 ## python
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+export PYENV_ROOT="${HOME}/.pyenv"
+export PATH="${PYENV_ROOT}/bin:${PATH}"
 eval "$(pyenv init -)"
 export PIPENV_VENV_IN_PROJECT=true
 
@@ -85,14 +85,14 @@ eval "$(rbenv init -)"
 
 ## OS-specific settings
 
-case ${OSTYPE} in
+case "${OSTYPE}" in
   darwin*)
-    export PATH="/usr/local/opt/openssl/bin:$PATH"
-    export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+    export PATH="/usr/local/opt/openssl/bin:${PATH}"
+    export PATH="/usr/local/opt/coreutils/libexec/gnubin:${PATH}"
     ;;
 esac
 
 
 ## others
 
-export PATH=$PATH:$HOME/.local/bin # various commands installed locally
+export PATH="${HOME}/.local/bin:${PATH}" # various commands installed locally
