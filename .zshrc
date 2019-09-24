@@ -57,3 +57,32 @@ alias ll="ls -lh"
 ### others
 
 setopt brace_ccl # enable individual characters expansion: a{123x-z} -> a1 a2 a3 ax ay az
+
+
+## go
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+
+## node
+
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+
+## python
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+export PIPENV_VENV_IN_PROJECT=true
+
+
+## ruby
+
+eval "$(rbenv init -)"
+
+
+## others
+
+export PATH=$PATH:$HOME/.local/bin # various commands installed locally
