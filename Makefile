@@ -1,4 +1,4 @@
-all: update install deploy
+all: update setup deploy
 
 update:
 	git pull origin master
