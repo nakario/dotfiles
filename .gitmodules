@@ -1,0 +1,9 @@
+[submodule ".zsh.d/repos/pure"]
+	path = .zsh.d/repos/pure
+	url = https://github.com/sindresorhus/pure.git
+[submodule ".zsh.d/repos/zsh-autosuggestions"]
+	path = .zsh.d/repos/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule ".zsh.d/repos/zsh-syntax-highlighting"]
+	path = .zsh.d/repos/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
