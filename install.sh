@@ -19,6 +19,13 @@ if [[ ! -e "${HOME}/.zplug" ]]; then
 fi
 
 
+## tmux
+
+if [[ ! -e "${HOME}/.tmux" ]]; then
+  git clone https://github.com/tmux-plugins/tpm "${HOME}/.tmux/plugins/tpm"
+fi
+
+
 ## go
 
 if [[ ! -x $(command -v go) ]]; then
