@@ -1,5 +1,9 @@
 all: update setup deploy
 
+.PHONY: update setup deploy
+
+.SUFFIXES: # Delete the default suffixes
+
 update:
 	git pull origin master
 	git submodule init
