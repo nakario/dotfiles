@@ -9,5 +9,5 @@ update:
 setup:
 	@ bash install.sh
 
-deploy: .zshrc .zsh.d .tmux.conf
+deploy: .zshrc .zsh.d .tmux.conf .emacs.d
 	@ $(foreach f, $+, ln -sfnv $(abspath $(f)) $(HOME)/$(f);)

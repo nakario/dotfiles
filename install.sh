@@ -26,6 +26,13 @@ if [[ ! -e "${HOME}/.tmux" ]]; then
 fi
 
 
+## emacs
+
+if [[ ! -e "${HOME}/.emacs.history" ]]; then
+  mkdir -p "${HOME}/.emacs.history"
+fi
+
+
 ## go
 
 if [[ ! -x $(command -v go) ]]; then
