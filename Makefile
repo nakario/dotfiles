@@ -5,7 +5,7 @@ all: update setup deploy
 .SUFFIXES: # Delete the default suffixes
 
 update:
-	git pull origin master
+	git pull
 	git submodule init
 	git submodule update
 	git submodule foreach git pull origin master
