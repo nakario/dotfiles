@@ -21,7 +21,7 @@ setopt extended_history
 
 ### alias
 
-alias ls="ls -G"
+alias ls="ls -G --color=auto"
 alias la="ls -a"
 alias ll="ls -lh"
 
