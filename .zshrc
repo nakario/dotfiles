@@ -28,6 +28,7 @@ alias ll="ls -lh"
 ### others
 
 setopt brace_ccl # enable individual characters expansion: a{123x-z} -> a1 a2 a3 ax ay az
+setopt no_beep
 
 
 ## go

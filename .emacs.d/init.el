@@ -15,6 +15,9 @@
 ;; Highlight a pair of parens
 (show-paren-mode t)
 
+;; Stop bells
+(setq ring-bell-function 'ignore)
+
 
 ;;; Key Bindings
 
