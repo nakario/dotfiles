@@ -8,17 +8,6 @@ if [[ ! -x $(command -v brew) ]]; then
 fi
 
 
-## zplug
-
-if [[ ! -x $(command -v zsh) ]]; then
-  brew install zsh
-fi
-
-if [[ ! -e "${HOME}/.zplug" ]]; then
-  git clone https://github.com/zplug/zplug "${HOME}/.zplug"
-fi
-
-
 ## tmux
 
 if [[ ! -e "${HOME}/.tmux" ]]; then
