@@ -15,6 +15,13 @@ if [[ ! -e "${HOME}/.tmux" ]]; then
 fi
 
 
+## direnv
+
+if [[ ! -x $(command -v direnv) ]]; then
+  brew install direnv
+fi
+
+
 ## emacs
 
 if [[ ! -e "${HOME}/.emacs.history" ]]; then

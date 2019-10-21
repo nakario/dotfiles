@@ -31,6 +31,11 @@ setopt brace_ccl # enable individual characters expansion: a{123x-z} -> a1 a2 a3
 setopt no_beep
 
 
+## direnv
+
+eval "$(direnv hook zsh)"
+
+
 ## go
 
 export GOPATH="${HOME}/go"
