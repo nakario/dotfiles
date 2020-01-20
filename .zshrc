@@ -25,6 +25,13 @@ alias ls="ls -G --color=auto"
 alias la="ls -a"
 alias ll="ls -lh"
 
+### functions
+
+function compare() {
+    paste -d "\n" $* /dev/null
+}
+
+
 ### others
 
 setopt brace_ccl # enable individual characters expansion: a{123x-z} -> a1 a2 a3 ax ay az
