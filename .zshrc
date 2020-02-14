@@ -31,6 +31,10 @@ function compare() {
     paste -d "\n" $* /dev/null
 }
 
+function ppe() {
+    perl -CSD -pe "use utf8; $1"
+}
+
 
 ### others
 
