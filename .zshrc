@@ -24,6 +24,7 @@ setopt extended_history
 alias ls="ls -G --color=auto"
 alias la="ls -a"
 alias ll="ls -lh"
+alias jwdiff="git diff --word-diff-regex=$'[^\x80-\xbf][\x80-\xbf]*' --no-index"
 
 ### functions
 
